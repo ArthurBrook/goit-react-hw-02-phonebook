@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { v4 as uuidv4 } from 'uuid'; // Використовуйте npm install uuid для встановлення пакету
+import { v4 as uuidv4 } from 'uuid'; 
 import ContactForm from './ContactForm/ContactForm';
 import Filter from './Filter/Filter';
 import ContactList from './ContactList/ContactList';
-import './app.module.css'; // Додайте стилі, якщо потрібно
+import './app.module.css'; // 
 
 class App extends Component {
   state = {

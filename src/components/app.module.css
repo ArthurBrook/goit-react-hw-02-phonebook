@@ -10,17 +10,27 @@ form {
 
 body {
   font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .container {
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 500px;
   padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 100%;
 }
 
 h1 {
   font-size: 24px;
   margin-bottom: 20px;
+  color: #333;
 }
 
 form {
@@ -29,13 +39,24 @@ form {
 
 label {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
 }
 
 input {
-  width: 300px; /* Змінено ширину на 300px */
+  width: calc(100% - 20px);
   padding: 10px;
   margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #4caf50;
 }
 
 button {
@@ -44,6 +65,8 @@ button {
   background-color: #4caf50;
   color: #fff;
   border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
 }
 
 button:hover {
@@ -65,6 +88,8 @@ li button {
   border: none;
   padding: 5px 10px;
   cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
 }
 
 li button:hover {
